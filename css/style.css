@@ -22,22 +22,24 @@ body {
 }
 
 .search-wrapper {
-    display: grid;
-    grid-template-columns: 9fr 3fr;
-    gap: 1.25em;
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid green;
 }
 
 .search-wrapper button {
+    margin-top: 10px;
     font-size: 1em;
     background-color: #3d64e6;
     color: #ffffff;
     padding: 0.8em 0;
-    border: none;
     border-radius: 1.5em;
+    border: none;       
     cursor: pointer;
-} 
+}
 
 .search-wrapper input {
+    height: 40px;
     font-size: 1em;
     padding: 0 0.62em;
     border: none;
@@ -45,6 +47,38 @@ body {
     outline: none;
     color: #222a43;
 }
+
+
+
+@media screen and (min-width: 480px) {
+    .search-wrapper {
+        display: grid;
+        grid-template-columns: 9fr 3fr;
+        gap: 1.25em;
+        outline: 2px solid tomato;
+    }
+    .search-wrapper button {
+        margin-top: 0;
+        font-size: 1em;
+        background-color: #3d64e6;
+        color: #ffffff;
+        padding: 0.8em 0;
+        border: none;
+        border-radius: 1.5em;
+        cursor: pointer;
+    } 
+    
+    .search-wrapper input {
+        height: auto;
+        font-size: 1em;
+        padding: 0 0.62em;
+        border: none;
+        border-bottom: 2px solid #3d64e6;
+        outline: none;
+        color: #222a43;
+    }
+  }
+
 
 #result {
     margin-top: 1.25em;
