@@ -24,7 +24,6 @@ body {
 .search-wrapper {
     display: flex;
     flex-direction: column;
-    outline: 2px solid green;
 }
 
 .search-wrapper button {
@@ -55,7 +54,6 @@ body {
         display: grid;
         grid-template-columns: 9fr 3fr;
         gap: 1.25em;
-        outline: 2px solid tomato;
     }
     .search-wrapper button {
         margin-top: 0;
